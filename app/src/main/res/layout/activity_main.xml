@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+   >
 
     <!--String res: Alt + Ent-->
 
@@ -12,79 +13,61 @@
     <!--above: tren-->
     <!--below: duoi-->
     <TextView
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="1"
+        android:text="Top Content Here"
         android:textSize="40sp"
         android:background="#F44336"
-        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffff"
         android:id="@+id/tv1"/>
     <TextView
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="2"
+        android:text="Bottom Content Here"
         android:textSize="40sp"
-        android:background="#4CAF50"
-        android:layout_below="@id/tv1"
-        android:layout_toRightOf="@id/tv1"
-        android:id="@+id/tv2"
-        />
-    <TextView
-        android:layout_width="100dp"
+        android:background="#706969"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffff"
+        android:id="@+id/tv2"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="3"
-        android:textSize="40sp"
-        android:background="#FFEB3B"
-        android:layout_below="@id/tv2"
-        android:layout_toRightOf="@id/tv2"
-        android:id="@+id/tv3"
-        />
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="4"
-        android:textSize="40sp"
-        android:background="#9C27B0"
-        android:layout_below="@id/tv3"
-        android:layout_toRightOf="@id/tv3"
-        android:id="@+id/tv4"
-        />
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="5"
-        android:textSize="40sp"
-        android:background="#FADB6C"
-        android:layout_below="@id/tv4"
-        android:layout_toLeftOf="@id/tv4"
-        android:id="@+id/tv5"
-    />
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="6"
-        android:textSize="40sp"
-        android:background="#473905"
-        android:layout_below="@id/tv5"
-        android:layout_toLeftOf="@id/tv5"
-        android:id="@+id/tv6"
-        />
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="7"
-        android:textSize="40sp"
-        android:background="#00BCD4"
-        android:layout_below="@id/tv6"
-        android:layout_toLeftOf="@id/tv6"
-        android:id="@+id/tv7"
-        />
+        android:orientation="horizontal"
+        android:layout_marginTop="350dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="First"
+            android:textSize="40sp"
+            android:layout_marginLeft="30dp"
+            android:background="#2FFF00"
+            android:textColor="#ffff"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Second"
+            android:textSize="40sp"
+            android:background="#2196F3"
+            android:textColor="#ffff"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Three"
+            android:textSize="40sp"
+            android:background="#FFC107"
+            android:textColor="#ffff"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="30dp"
+            />
+
+    </LinearLayout>
 
 </RelativeLayout>
